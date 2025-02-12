@@ -1,0 +1,7 @@
+drop table [dbo].[Sale]
+drop table [dbo].[Payment]
+drop table [dbo].[User]
+drop table [dbo].[Balance]
+
+dotnet ef migrations add Initial
+dotnet ef database update
